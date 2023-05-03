@@ -1,6 +1,10 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
 }
 
 :root {
@@ -15,16 +19,81 @@
 
 body {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#logo {
+    width : 61.09px;
+    height : 19px;
+    margin: 30px;
+}
+nav {
+    display: flex;
+    justify-content: row;
+    
+}
+nav a {
+ margin-top: 16px;
+ margin-right: 42.61px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+margin : 20px;
+width: 23.5em;
+height: 49px;
+
+}
+
+.fa-location-dot {
+    padding : 24.5px 25px;
+    background:#F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius : 15px 0 0 15px;
+    flex-grow:1;
+    display:flex;
     justify-content: center;
 }
 
+.search-input {
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+flex-grow: 1;
+}
+
+.btn-search {
+    background-color: var(--main-color);
+    display:flex;
+    align-items: center;
+    padding : 15px 16px;
+    color:white;
+    border : 1px solid var(--main-color);
+    border-radius: 0px 15px 15px 0px;
+    width : 132px;
+    height : 49px;
+    font-weight: bold;
+}
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
-
 .section-title {
     margin: 0;
     font-size: 22px;
