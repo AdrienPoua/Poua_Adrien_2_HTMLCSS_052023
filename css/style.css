@@ -1,6 +1,6 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
     font-size: 16px;
     box-sizing: border-box;
     margin: 0px;
@@ -30,10 +30,14 @@ header {
 }
 
 
+.logo-container {
+    padding: 30px 50px;
+    width: fit-content;
+}
+
 #logo {
     width: 61.09px;
     height: 19px;
-    margin: 30px;
 }
 
 nav {

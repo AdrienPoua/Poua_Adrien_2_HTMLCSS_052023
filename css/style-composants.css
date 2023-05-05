@@ -1,0 +1,95 @@
+* {
+    font-family: 'Raleway';
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+/*  logo   */
+.logo-container {
+    padding: 30px;
+    width: fit-content;
+}
+
+#logo {
+    width: 61.09px;
+    height: 19px;
+}
+
+/* Fonts */
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* link nav */
+
+nav {
+ width: fit-content;
+ padding: 0px 25px;
+ display : flex;
+ gap : 68px;
+}
+
+
+.nav-hebergements {
+    color:#0065FC;
+    text-decoration: none;
+    position : relative;
+    /* probleme de taille : la texte dois faire 112px et le miens fait 103.71 */
+}
+
+/* barre au dessus, cela dit le texte n'est pas en bas de sont container car le height du container = fill. 
+Si je veux le faire exactement, il faut faire la barre avec une div mais c'est moche ? */
+.nav-hebergements:before {
+    content:'';
+    position: absolute;
+    top:-10px;
+    height:2px;
+    width : 113px;
+    background:#0065FC;
+}
+
+.nav-hebergements:hover {
+    text-decoration: underline;
+}
+.nav-activites {
+    text-decoration: none;
+    color:black;
+}
+
+/*  btn-filter */
+
+.btn-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #DEEBFF;
+    border-radius: 25px;
+    padding: 15px 20px;
+    gap: 10px;
+    font-weight: bold;
+}
