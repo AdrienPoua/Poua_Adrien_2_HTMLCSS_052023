@@ -17,6 +17,10 @@
     color: var(--main-color);
 }
 
+.fa-location-dot {
+    color: black;
+}
+
 h1 {
     font-size: 22px;
     font-weight: bold;
@@ -32,6 +36,8 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: white;
+    max-width: 1440px;
+    margin: auto;
 }
 
 header {
@@ -65,21 +71,22 @@ nav {
 }
 
 .nav-hebergements:before {
-    content:'';
+    content: '';
     position: absolute;
-    top:-14px;
-    height:2px;
-    width : 113px;
-    background:#0065FC;
+    top: -14px;
+    height: 2px;
+    width: 113px;
+    background: #0065FC;
 }
 
 .nav-hebergements:hover {
     text-decoration: underline;
 }
+
 .nav-activites {
     text-decoration: none;
-    color:black;
-    margin-right:42.61px;
+    color: black;
+    margin-right: 42.61px;
 }
 
 /* fin nav */
@@ -88,7 +95,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height:300px;
+    height: 300px;
     padding-left: 50px;
     margin-bottom: 37.5px;
 }
@@ -97,8 +104,8 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    width : 377px;
-    height : 49px;
+    width: 377px;
+    height: 49px;
 }
 
 .container-location-dot {
@@ -106,29 +113,30 @@ form {
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
-    flex-grow:1;
+    flex-grow: 1;
     height: 100%;
     border-radius: 15px 0px 0px 15px;
 }
 
 .search-input {
     text-align: center;
-    color:black;
+    color: black;
     font-weight: bold;
-    border: 1px solid #F2F2F2;;
-    height : 100%;
+    border: 1px solid #F2F2F2;
+    ;
+    height: 100%;
 }
 
 
 .search-button {
-    height:100%;
+    height: 100%;
     background-color: #0065FC;
-    border : 1px solid #0065FC;
+    border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     color: #F2F2Ff;
     font-weight: bold;
     font-size: 18px;
-    padding : 15px 16px 15px 16px;
+    padding: 15px 16px 15px 16px;
 }
 
 .filter {
@@ -149,13 +157,13 @@ form {
     align-items: center;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    height : 50px;
-    Padding : 4px 19px 4px 19px;
+    height: 50px;
+    Padding: 4px 19px 4px 19px;
     gap: 10px;
     font-weight: bold;
 }
 
-.btn-filter:focus{
+.btn-filter:focus {
     background-color: #DEEBFF;
 }
 
@@ -164,6 +172,7 @@ form {
     gap: 8px;
 }
 
+/* CARDS SECTION */
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -180,7 +189,7 @@ form {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -195,7 +204,7 @@ form {
     font-weight: 700;
 }
 
-.neutralStar {
+.neutral-star {
     color: var(--main-bg-color)
 }
 
@@ -216,7 +225,12 @@ form {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
 }
+
 
 .fullcards {
     display: flex;
@@ -226,7 +240,6 @@ form {
 }
 
 .hebergement-card {
-    margin-top: 30px;
     width: 250.33px;
     height: 207.25px;
     border-radius: 20px;
@@ -255,9 +268,8 @@ form {
 }
 
 .showmore {
-    font-weight: bolder;
-    margin: 20px;
-
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /****** Populaires ***********/
@@ -305,7 +317,45 @@ form {
     margin-bottom: 5px;
 }
 
+/* Section activites */
 
+.section-activite {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 30px
+}
+
+.activites {
+    display: flex;
+    gap: 30px;
+}
+
+.activites-card {
+    display: flex;
+    flex-direction: column;
+    height: 439px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    flex-grow: 1;
+
+}
+
+.activites-card img {
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    height: 380px;
+    width: 297.5px;
+}
+
+.activites-card-content {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
