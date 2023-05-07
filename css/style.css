@@ -15,12 +15,23 @@
 
 .fa-solid {
     color: var(--main-color);
+    position: relative;
 }
 
 .fa-location-dot {
     color: black;
 }
 
+.fa-infos-bug {
+    display:flex;
+    align-items: center;
+
+}
+.fa-info {
+    border: #D9D9D965 solid 2px;
+    border-radius: 50%;
+    padding : 7px 10px;
+}
 h1 {
     font-size: 22px;
     font-weight: bold;
@@ -170,6 +181,10 @@ form {
 .room-availaible {
     display: flex;
     gap: 8px;
+}
+.room-availaible p {
+    display: flex;
+    align-items: center;
 }
 
 /* CARDS SECTION */
@@ -357,7 +372,26 @@ form {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+/* footer */
 
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    padding : 20px;
+    margin-top: 65px;
+}
+
+ul {
+    list-style: none;
+    flex-grow: 1;
+
+  
+}
+li{
+    margin : 15px 0px
+
+ 
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
