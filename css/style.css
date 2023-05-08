@@ -1,10 +1,10 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-size: 16px;
 }
 
 :root {
